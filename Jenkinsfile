@@ -13,7 +13,6 @@ pipeline {
         }
 
         stage('Prallel Stages') {
-            parallel {
                 stage('Check code quality repo1'){
                     steps {
                         sh '''
