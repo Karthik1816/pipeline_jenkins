@@ -11,7 +11,7 @@ pipeline {
     stage("TEst") {
         agent { label "slave18"}
         steps { 
-            echo "HEllo world"
+            echo "BEAUTY world"
             sh '''
                ls
                pwd
