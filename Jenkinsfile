@@ -1,8 +1,6 @@
 pipeline {
     agent any
 
-    
-
     stages {
         stage('Checkout'){
             steps {
@@ -13,6 +11,7 @@ pipeline {
         }
 
         stage('Prallel Stages') {
+            parallel {
                 stage('Check code quality repo1'){
                     steps {
                         sh '''
